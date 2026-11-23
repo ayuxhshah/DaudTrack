@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Daud Track</title>
+  <link rel="preload" href="./doto-900.woff" as="font" type="font/woff" crossorigin />
+  <link rel="stylesheet" href="./style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud" aria-live="polite">
+    <span id="hi">HI 00000</span>
+    <span id="score">00000</span>
+  </div>
+
+  <div id="hint">TAP OR PRESS SPACE TO RUN</div>
+
+  <div id="over" hidden>
+    <div class="big">GAME OVER</div>
+    <div id="overScore"></div>
+    <div class="small" id="overHint">TAP TO RUN AGAIN</div>
+  </div>
+
+  <div id="pops"></div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
